@@ -7,7 +7,7 @@ export default function AdminProfilePage() {
             <div className="mx-auto max-w-5xl">
                 <div className="rounded-3xl border border-gray-200 dark:border-gray-800 bg-[var(--background)] p-6 shadow-lg">
                     <div className="group flex flex-col items-center gap-4 md:flex-row">
-                        <div className="flex h-28 w-28 items-center justify-center rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 shadow-lg">
+                        <div className="flex h-28 w-28 items-center justify-center rounded-full bg-blue-500 shadow-lg">
                             <FaUserCircle className="h-24 w-24 text-white" />
                         </div>
 
@@ -130,14 +130,14 @@ export default function AdminProfilePage() {
                                 </span>
                             </div>
 
-                            <div className="border-l-4 border-green-500 pl-3">
+                            <div className="border-l-4 border-blue-500 pl-3">
                                 <p className="font-medium">Order Approved</p>
                                 <span className="text-sm text-gray-500 dark:text-gray-400">
                                     5 hours ago
                                 </span>
                             </div>
 
-                            <div className="border-l-4 border-purple-500 pl-3">
+                            <div className="border-l-4 border-blue-500 pl-3">
                                 <p className="font-medium">Settings Updated</p>
                                 <span className="text-sm text-gray-500 dark:text-gray-400">
                                     Yesterday
