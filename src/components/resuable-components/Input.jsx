@@ -11,24 +11,24 @@ export default function Input({
     <div className="w-full group">
       
       {label && (
-        <label className="block mb-2 text-sm font-medium text-black ">
+        <label className="block mb-2 text-sm font-medium text-[var(--foreground)]">
           {label}
         </label>
       )}
 
       <div className="relative flex items-center">
         
-        <FaSearch className="absolute left-4 text-black hover:text-[#009CFF] " />
+        <FaSearch className="absolute left-4 text-[var(--foreground)] hover:text-[#009CFF] " />
 
         <input
           type={type}
           className={`
             w-full pl-11 pr-4 py-2.5 rounded-xl
 
-            bg-white 
+            bg-[var(--background)]
             border border-gray-200 
 
-            text-black 
+            text-[var(--foreground)]
 
             outline-none
             focus:border-[#009cff]

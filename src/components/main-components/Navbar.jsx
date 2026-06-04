@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa";
 import Input from "../resuable-components/Input";
 import { IoMdSettings } from "react-icons/io";
+import Link from "next/link";
 
 
 export default function Navbar({ sidebarOpen, setSidebarOpen, modalOpen, setModalOpen }) {
@@ -152,7 +153,8 @@ export default function Navbar({ sidebarOpen, setSidebarOpen, modalOpen, setModa
             </div>
           </button>
 
-          <button
+          <Link href="/dashboard/profile">
+          <button 
             className="
    flex items-center gap-2 group 
               px-0 py-2 rounded-xl
@@ -194,6 +196,7 @@ export default function Navbar({ sidebarOpen, setSidebarOpen, modalOpen, setModa
 
             </div>
           </button>
+          </Link>
 
 
 
