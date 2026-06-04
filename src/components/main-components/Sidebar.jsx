@@ -98,9 +98,9 @@ export default function Sidebar({
                 rounded="xl"
                 align="center"
                 justify="start"
-                className={`
+                className={` group
                   w-full justify-start
-                  transition-all duration-200
+                  transition-all duration-400
                   ${active
                     ? ""
                     : "hover:translate-x-1"
@@ -111,8 +111,8 @@ export default function Sidebar({
                     className={`
                       text-lg transition-transform duration-200
                       ${active
-                        ? "scale-110"
-                        : "group-hover:scale-110"
+                        ? "scale-110 text-blue-500"
+                        : "group-hover:scale-110 group-hover:text-blue-500"
                       }
                     `}
                   >

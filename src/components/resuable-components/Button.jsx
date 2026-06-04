@@ -34,8 +34,8 @@ export default function Button({
       text-white shadow-lg shadow-red-500/20
     `,
     ghost: `
-      bg-transparent hover:bg-white  cursor-pointer
-      text-(--foreground) hover:text-[#009cff] cursor-pointer hover:shadow-lg hover:shadow-[#009cff]/20 
+      bg-transparent  cursor-pointer
+      text-(--foreground) cursor-pointer hover:shadow-lg hover:shadow-[#009cff]/20 
     `,
     cross:`
     rounded-full group hover:bg-gray-100 dark:hover:bg-zinc-800 flex items-center justify-center transition
