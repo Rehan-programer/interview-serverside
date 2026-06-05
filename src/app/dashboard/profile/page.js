@@ -12,7 +12,7 @@ export default function AdminProfilePage() {
                         </div>
 
                         <div className="flex-1 text-center md:text-left">
-                            <h1 className="text-3xl font-bold text-[var(--foreground)] transition-colors hover:text-[#009cff]">
+                            <h1 className="text-3xl font-bold text-[var(--foreground)] transition-colors ">
                                 Muhammad Ahmad
                             </h1>
 
@@ -116,7 +116,6 @@ export default function AdminProfilePage() {
                         </button>
                     </div>
 
-                    {/* Activity */}
                     <div className="rounded-3xl border border-gray-200 dark:border-gray-800 bg-[var(--background)] p-6 shadow-lg">
                         <h2 className="mb-4 text-xl font-semibold">
                             Recent Activity

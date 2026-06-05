@@ -11,9 +11,13 @@ import {
 import Input from "../resuable-components/Input";
 import { IoMdSettings } from "react-icons/io";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 
 export default function Navbar({ sidebarOpen, setSidebarOpen, modalOpen, setModalOpen }) {
+
+  const pathname = usePathname();
+  const isProfile = pathname === "/dashboard/profile";
 
   const toggleModal = () => {
     setModalOpen(!modalOpen);
@@ -125,13 +129,13 @@ export default function Navbar({ sidebarOpen, setSidebarOpen, modalOpen, setModa
     "
             >
               <IoMdSettings
-
-                className="
-        group-hover:text-[#009cff]
-        text-lg
-        transition-transform duration-300
-        group-hover:scale-110
-      "
+                className={`
+    text-lg transition-all duration-300
+    ${modalOpen
+                    ? "text-[#009cff] scale-110"
+                    : "group-hover:text-[#009cff] group-hover:scale-110"
+                  }
+  `}
               />
 
 
@@ -154,48 +158,48 @@ export default function Navbar({ sidebarOpen, setSidebarOpen, modalOpen, setModa
           </button>
 
           <Link href="/dashboard/profile">
-          <button 
-            className="
+            <button
+              className="
    flex items-center gap-2 group 
               px-0 py-2 rounded-xl
               transition cursor-pointer  
   "
-          >
-            <div
-              className=" bg-white
+            >
+              <div
+                className=" bg-white
       relative flex items-center justify-center
       w-10 h-10 rounded-full group 
       transition-all duration-300 
     "
-            >
-              <FaUserCircle
+              >
+                <FaUserCircle
+                  className={`
+    text-lg transition-all duration-300
+    ${isProfile
+                      ? "text-[#009cff] scale-110"
+                      : "group-hover:text-[#009cff] group-hover:scale-110"
+                    }
+  `}
+                />
 
-                className="
-        group-hover:text-[#009cff]
-        text-lg
-        transition-transform duration-300
-        group-hover:scale-110
-      "
-              />
 
+              </div>
 
-            </div>
-
-            <div className="text-left hidden lg:block">
-              <h3
-                className=" 
+              <div className="text-left hidden lg:block">
+                <h3
+                  className=" 
         text-md font-semibold
         text-(--foreground)
         transition-colors duration-300
         group-hover:text-[#009cff]
       "
-              >
-                Admin
-              </h3>
+                >
+                  Admin
+                </h3>
 
 
-            </div>
-          </button>
+              </div>
+            </button>
           </Link>
 
 
